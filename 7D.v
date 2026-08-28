@@ -1,0 +1,7 @@
+module encoder4to2(d0, d1, d2, d3, y1, y0);
+  input d0, d1, d2, d3;
+  output y1, y0;
+
+  assign y0 = d1 | d3;
+  assign y1 = d2 | d3;
+endmodule
